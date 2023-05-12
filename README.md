@@ -15,11 +15,8 @@ Am not responsable for any damages or potential changes brought by other contrib
 
 ## How to
 
-This tool can be used to delete all branches in a Git repository except for a specific set of branches specified by the user. 
-To use the script, save the code to a file with a .sh extension (e.g., GitCleaner.sh), navigate to the directory where the file is saved using the command line, and then run the script by typing ./GitCleaner.sh and pressing Enter.
-
-The script will prompt the user to enter a comma-separated list of branch names to keep. It will then print a list of all branches in the repository and a list of branches that will NOT be deleted based on the user's input.
-
-The user will then be prompted to confirm whether they want to delete all other branches. If they type "y" and press Enter, the script will delete all branches except for the ones in the user's input. If they type "N" or any other character and press Enter, the script will exit without deleting any branches.
-
-Once the script finishes running, it will output a message indicating which branches were kept. It's important to note that this script will permanently delete branches from the repository, so it's recommended to use it with caution and make sure you don't accidentally delete any branches you want to keep.
+- Navigate to the directory of the Git repository where you want to delete branches.
+- Open a terminal window and execute the shell script by typing "./script.sh" (assuming the name of the script is "script.sh").
+- When prompted, enter the names of the branches you want to keep, separated by commas.
+- The script will then delete all branches in the repository, except the ones you specified, both locally and remotely. The script will print a message to the console for each branch that is deleted.
+- Once the script has completed running, you can verify that the branches have been deleted by running the "git branch" command.
